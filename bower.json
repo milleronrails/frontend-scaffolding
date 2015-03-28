@@ -1,9 +1,9 @@
 {
-  "name": "twg-frontend-scaffolding",
+  "name": "tfd-scaffolding",
   "version": "0.0.4",
-  "homepage": "https://github.com/twg/frontend-scaffolding",
+  "homepage": "https://github.com/milleronrails/frontend-scaffolding",
   "authors": [
-    "Mark Appleby <mark@twg.ca>"
+    "Matt Miller <matt@thefriendlydev.com>"
   ],
   "license": "MIT",
   "ignore": [

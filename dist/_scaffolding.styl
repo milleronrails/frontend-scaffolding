@@ -23,6 +23,9 @@ breakpoints ?= {
   palm: {breakpoint: '(max-width: 480px)', gutter: 24px}
 }
 
+success = #449d44
+warning = #ec971f
+danger = #c9302c
 html, body
   margin: 0
   padding: 0
@@ -118,6 +121,13 @@ for key, value in breakpoints
     direction ltr
     text-align left
 
+.plainList
+  margin: 0
+  padding: 0
+  list-style-type: none
+  li
+    margin: 0
+    padding: 0
 .siteWrapper
   width: 100%
   height: 100%
@@ -130,3 +140,42 @@ for key, value in breakpoints
 .siteFooter
   display: table-row
   height: 1px
+
+body
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  font-size: base-font-size
+
+strong
+  font-weight: 700
+
+em
+  font-style: italic
+i
+  font-style: italic
++replicate('.u-alignLeft')
+  text-align: left
+
++replicate('.u-alignCenter')
+  text-align: center
+
++replicate('.u-alignRight')
+  text-align: right
+
++replicate('.u-block')
+  display: block
+
++replicate('.u-inlineBlock')
+  display: inline-block
+
++replicate('.u-relative')
+  position: relative
+
++replicate('.u-wide')
+  width: 100%
+
+.u-clearfix
+  &:after
+    content: "";
+    display: table;
+    clear: both;
